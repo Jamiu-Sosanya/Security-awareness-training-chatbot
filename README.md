@@ -355,9 +355,9 @@ CyberSense is built for **internal corporate cybersecurity-awareness training** 
 
 ## 👤 Author
 
-Built by **[Your Name](#)** as a cybersecurity portfolio project.
+Built by **[Jamiu Sosanya](#)** as a cybersecurity portfolio project.
 
-[LinkedIn](#) • [GitHub](#)
+[LinkedIn](https://www.linkedin.com/in/sosanya-temitope) • [GitHub](https://github.com/Jamiu-Sosanya)
 
 ---
 
