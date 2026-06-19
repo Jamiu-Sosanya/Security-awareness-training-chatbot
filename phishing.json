@@ -1,0 +1,72 @@
+[
+  {
+    "id": "ph-001", "topic": "phishing", "difficulty": "easy",
+    "question": "An email arrives from 'paypal-security@gmail.com' asking you to verify your account. What is the biggest red flag?",
+    "options": ["A. The email mentions security", "B. PayPal never uses Gmail — the domain should be @paypal.com", "C. It asks you to verify", "D. It was sent in the evening"],
+    "correct_index": 1, "correct_letter": "B",
+    "explanation": "Legitimate companies always use their own domain for email. An @gmail.com sender pretending to be PayPal is a classic phishing indicator."
+  },
+  {
+    "id": "ph-002", "topic": "phishing", "difficulty": "easy",
+    "question": "You receive an email saying you've won a £500 Amazon gift card. It asks you to click a link to claim it. What should you do?",
+    "options": ["A. Click the link — you might have actually won", "B. Forward it to friends", "C. Delete it — unsolicited prize emails are almost always phishing", "D. Reply asking for proof"],
+    "correct_index": 2, "correct_letter": "C",
+    "explanation": "Unexpected prize emails are a textbook phishing lure. If you didn't enter a competition, you didn't win one."
+  },
+  {
+    "id": "ph-003", "topic": "phishing", "difficulty": "easy",
+    "question": "Which URL is most likely legitimate if you are trying to visit the real HMRC website?",
+    "options": ["A. www.hmrc-refund.co.uk", "B. www.gov.uk/government/organisations/hm-revenue-customs", "C. www.hmrc-online.net", "D. www.hmrc.support.com"],
+    "correct_index": 1, "correct_letter": "B",
+    "explanation": "HMRC's official home is under gov.uk. Any other domain (hmrc-refund.co.uk, hmrc-online.net) is almost certainly a phishing site."
+  },
+  {
+    "id": "ph-004", "topic": "phishing", "difficulty": "medium",
+    "question": "An email from 'support@micros0ft.com' (with a zero) warns that your Microsoft 365 licence has expired. What technique is this?",
+    "options": ["A. Spear phishing", "B. Lookalike domain spoofing", "C. Whaling", "D. Vishing"],
+    "correct_index": 1, "correct_letter": "B",
+    "explanation": "Replacing a letter with a similar-looking character (o→0) is lookalike domain spoofing. Always hover over links and check the actual domain character by character."
+  },
+  {
+    "id": "ph-005", "topic": "phishing", "difficulty": "medium",
+    "question": "What is the key difference between phishing and spear phishing?",
+    "options": ["A. Spear phishing is sent via SMS, phishing via email", "B. Spear phishing is targeted using personal information; phishing is mass-sent", "C. Phishing is illegal; spear phishing is not", "D. There is no difference — the terms are interchangeable"],
+    "correct_index": 1, "correct_letter": "B",
+    "explanation": "Spear phishing uses reconnaissance — your name, employer, recent transactions — to craft a believable targeted message. It has a much higher success rate than bulk phishing."
+  },
+  {
+    "id": "ph-006", "topic": "phishing", "difficulty": "medium",
+    "question": "An email's display name says 'IT Support' but hovering over the sender shows it's from 'support@external-vendor.xyz'. What should you do?",
+    "options": ["A. Trust the display name — IT would not lie", "B. Reply to confirm before taking any action", "C. Report the email — the domain does not match a company email address", "D. Only be suspicious if there is an attachment"],
+    "correct_index": 2, "correct_letter": "C",
+    "explanation": "Display names are trivially faked. Always check the actual sending address. An external .xyz domain posing as internal IT is a major red flag."
+  },
+  {
+    "id": "ph-007", "topic": "phishing", "difficulty": "hard",
+    "question": "An attacker registers the domain 'cornpany.com' (corn instead of com) to impersonate 'company.com'. What attack method is this specifically?",
+    "options": ["A. Typosquatting", "B. IDN homograph attack", "C. DNS poisoning", "D. ARP spoofing"],
+    "correct_index": 0, "correct_letter": "A",
+    "explanation": "Typosquatting registers domains with common typos. The IDN homograph attack is similar but uses Unicode characters visually identical to ASCII letters — both are used in sophisticated phishing campaigns."
+  },
+  {
+    "id": "ph-008", "topic": "phishing", "difficulty": "hard",
+    "question": "A phishing email passes your organisation's SPF, DKIM, and DMARC checks. How is this possible?",
+    "options": ["A. It is not possible — passing all three means the email is legitimate", "B. The attacker compromised a legitimate sending domain that has proper DNS records configured", "C. SPF and DKIM are optional — only DMARC matters", "D. Only happens if the mail server is on-premise"],
+    "correct_index": 1, "correct_letter": "B",
+    "explanation": "SPF/DKIM/DMARC verify the sending infrastructure, not intent. If an attacker compromises a legitimate partner or vendor domain, their emails pass all checks. This is why Business Email Compromise is so dangerous."
+  },
+  {
+    "id": "ph-009", "topic": "phishing", "difficulty": "hard",
+    "question": "What is an 'adversary in the middle' (AiTM) phishing attack?",
+    "options": ["A. Phishing that targets middle management specifically", "B. A proxy that sits between the user and a real site, capturing session cookies to bypass MFA", "C. An attack that intercepts physical mail", "D. Phishing delivered via a man-in-the-middle WiFi hotspot only"],
+    "correct_index": 1, "correct_letter": "B",
+    "explanation": "AiTM attacks proxy the real login page in real time, capturing the session cookie after MFA is completed. This allows attackers to bypass MFA entirely. Hardware security keys (FIDO2) are the only defence."
+  },
+  {
+    "id": "ph-010", "topic": "phishing", "difficulty": "easy",
+    "question": "You receive a voicemail from someone claiming to be from your bank asking you to call back urgently about suspicious activity. This is called what?",
+    "options": ["A. Phishing", "B. Smishing", "C. Vishing", "D. Spear phishing"],
+    "correct_index": 2, "correct_letter": "C",
+    "explanation": "Vishing (voice phishing) uses phone calls or voicemails. Always call your bank back using the number on the back of your card, never the number left in the voicemail."
+  }
+]
